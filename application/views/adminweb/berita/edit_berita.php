@@ -148,28 +148,15 @@
 							<li><p align="center"><?php echo $username; ?></li>
 							<li><p align="center"><a href="<?php echo site_url('adminweb/c_admin/logout'); ?>"><font color="#008000">[ Logout ]</font></a></li>
 		</div>
-		<h3>Unit Kerja</h3>
-		<div class="blo-top">
-		<font size="1">
-		<li><a href="<?php echo base_url(); ?>kkm">Pusat Penelitian dan Penerbitan</a></li>
-		<li><a href="<?php echo base_url(); ?>kkm">Pusat Pengabdian Masyarakat</a></li>
-		<li><a href="<?php echo base_url(); ?>kkm">Pusat Studi Gender dan Anak</a></li>
-		</font>
-		</div>
 		
-		<h3>Kategori</h3>
-		<div class="blo-top">
-							<li><a href="<?php echo base_url(); ?>berita">Berita</a></li>
-							<li><a href="<?php echo base_url(); ?>pengumuman">Pengumuman</a></li>
-							<li><a href="<?php echo base_url(); ?>kkm">Kuliah Kerja Mahasiswa</a></li>
-							<li><a href="<?php echo base_url(); ?>volunteer"> Volunteer</a></li>
-							<li><a href="<?php echo base_url(); ?>galeri">Galeri</a></li>
-		</div>
 		
+	
 		<h3>Media Sosial</h3>
 		<div class="blo-top">
 <a class="twitter-timeline" href="https://twitter.com/LP2M_UINSGD" data-widget-id="675119407560073216">Tweets by @LP2M_UINSGD</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>		</div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+
+</div></div>
 		
 		
 		
