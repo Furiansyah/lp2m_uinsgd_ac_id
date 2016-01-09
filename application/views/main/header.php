@@ -111,7 +111,7 @@ $("ul.menu >li >ul").siblings("a").prepend("<span class='arrow-bottom'></span>")
 								  <li><a href="<?php echo base_url(); ?>web">KKM</a>
 									<ul>
 										<li><a href="<?php echo base_url(); ?>web">Pendaftaran</a></li>
-										<li><a href="#">Forum Diskusi</a></li>
+										<li><a href="<?php echo base_url(); ?>pusat_pengabdian_masyarakat/chat">Forum Diskusi</a></li>
 										<li><a href="#">Instrumen Penilaian</a></li>
 									</ul>
 								</li>
