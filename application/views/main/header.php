@@ -7,8 +7,6 @@
 <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url(); ?>assets/css/style-admin.css" rel="stylesheet" type="text/css" media="all" />
 
-<script src="<?php echo base_url(); ?>assets/js/twd-menu.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery-1.8.3.min.js"></script>
 	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,8 +15,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='<?php echo base_url(); ?>assets/fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
 <link href='<?php echo base_url(); ?>assets/fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/responsiveslides.min.js"></script>
+
+
 <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -35,29 +36,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- header -->
+
 	<div class="header">
 		<div class="container">
-			<div class="logo">
+			<div class="logo" align="center">
 				<a href="<?php echo base_url(); ?>">
-				<img src="<?php echo base_url(); ?>assets/images/(logo)LPPM.png" class="img-responsive" alt=""></a>
+				<img src="<?php echo base_url(); ?>assets/images/(logo)LPPM.png" class="img-res" alt=""></a>
 			</div>
+										<div class="clearfix"></div>
+										
+<script type="text/javascript">
+// Responsive Menu
+$(".menu-toggle").click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(".multi-level-responsive-menu ul.menu").slideToggle();
+});
+$("ul.menu >li >ul").siblings("a").prepend("<span class='arrow-bottom'></span>").addClass("slidedown");
+	if (document.documentElement.clientWidth < 769) {
+	jQuery("ul.menu >li >ul li ul").siblings("a").prepend("<span class='arrow-bottom'></span>").addClass("slidedown");
+    	jQuery(".slidedown").click(function(e) {
+	      	e.preventDefault();
+	      	jQuery(this).siblings("ul").slideToggle();
+	    });
+	}
+	else if(document.documentElement.clientWidth > 769){
+	jQuery("ul.menu >li >ul li ul").siblings("a").prepend("<span class='arrow-right'></span>");
+}	
+</script>
 
-<div class="fly">
-<div class="content">
-						<ul class="cl-effect-1">
+<div class="menu-wrapper">
+		<button class="menu-toggle">Menu</button>
+		<div class="multi-level-responsive-menu">
+			
+			<ul class="menu">
 						
-		<nav>
-			<ul id="nav">
-						
-							<li class="active"><a href="<?php echo base_url(); ?>home">BERANDA</a></li>
+							<li><a href="<?php echo base_url(); ?>home">BERANDA</a></li>
 							<li><a href="<?php echo base_url(); ?>home/read/profil-lppm-lembaga-penelitian-dan-pengabdian-masyarakat">PROFIL</a></li>
-							 <li><a href="#">PUSAT-PUSAT</a>
+							 <li><a href="#">PUSAT-PUSAT &dArr;</a>
 			      <ul>
 				    <li><a href="<?php echo base_url(); ?>home/read/pusat-penelitian-dan-penerbitan-masyarakat">Pusat Penelitian dan Penerbitan</a>
 						 <ul>
 			                    <li><a href="<?php echo base_url(); ?>home/read/pusat-penelitian-dan-penerbitan-masyarakat">Profil</a></li>
 								 <li><a href="#">Program</a></li>
-			                    <li><a href="#">Unduh</a>
+			                    <li><a href="#">Unduh &raquo;</a>
 									<ul>
 										<li><a href="#">Pedoman</a></li>
 										<li><a href="#">Panduan</a></li>
@@ -128,29 +150,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="<?php echo base_url(); ?>download">DOWNLOAD</a></li>		
 							<li><a href="<?php echo base_url(); ?>contact_us">CONTACT US</a></li>
 
-							<div class="clearfix"></div>
 						</ul>
 						
-		</nav> <!-- /Navigation -->
 		</ul>
+		</div>
 		</div>
 		
 				</div>
 				
-						<!-- script-for-nav -->
-							<script>
-								$( "span.menu" ).click(function() {
-								  $( ".head-nav ul" ).slideToggle(300, function() {
-									// Animation complete.
-								  });
-								});
-							</script>
-						<!-- script-for-nav -->
-				
+						
 						
 					<div class="clearfix"> 
 			</div>
-		</div>
 		
 	</div>
 	
