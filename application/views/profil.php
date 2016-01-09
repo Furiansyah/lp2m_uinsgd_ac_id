@@ -89,7 +89,7 @@
 				<div class="blog-grid-left">
 				</div>
 				<div class="blog-grid-right">
-				<a href="<?php echo base_url();?>main/read/<?php echo$list['slug']?>">
+				<a href="<?php echo base_url();?>home/read/<?php echo$list['slug']?>">
 		<font size="1">
 <?php echo $list['judul']?>&rsaquo;</a></font>
 				</div>	
